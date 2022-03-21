@@ -3,31 +3,34 @@ import React from 'react';
 class Car extends React.Component {
     constructor (props) {
         super (props);
-        this.color = "";
-        this.make = 
-        this.state = {color: "red", name: "Bessy"};
-        this.make ="Mazda";
+        this.state = {
+            brand: "Ford",
+            model: "Mustang",
+            color: "red",
+            year: 1964
+          };
+      }
+      render() {
+        return (
+          <h1>
+            Hi, I am a {this.props.color} {this.props.model} Car!
+          </h1>
+        );
+      }
     }
     
-    render () {
-        return (
-         <h1>
-          Hi, I'm a {this.state.color} {this.make} named {this.state.name};
-          </h1>
-    );
-    }
-}
-
+    
+/*
 let mazda = new Car ();
 mazda.state.color = "yellow";
 console.log("mazda.state.color", mazda.state.color);
-/*
+
 function Car() {
     return <h1> Hi, I'm a car from a function</h1>;
 }
-*/
 
-/*
+
+
 var Car = () => {
     return (
     <div>
@@ -36,11 +39,11 @@ var Car = () => {
         </div>
     );
 );
-*/
 
-let mazda a 
 
-console.log("Car:, Car");
+
+
+console.log("Car:, Car"); */
 
 
 export default Car;

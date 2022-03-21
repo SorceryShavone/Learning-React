@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Car from './Car';
+import { CarAlso, Garage } from "./CarAlso.js";
+import GarageWithCar from "./GarageWithCar.js";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-<Car model="mazda" color="yellow"/>,
+  <GarageWithCar aName="my name" />,
   document.getElementById('root')
 );
 
